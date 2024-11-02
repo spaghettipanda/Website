@@ -93,24 +93,19 @@ body {
     */
 h1 {
   font-family: "Rubik Wet Paint", system-ui;
-
   margin-left: 20px;
 }
 
 h2 {
   font-family: "Rubik", sans-serif;
-
 }
 
 h3 {
   font-family: "Rubik", sans-serif;
-
 }
 
 p {
   font-family: "Itim", serif;
-
-  text-align: center;
 }
 
 /* Font Flags */
@@ -131,4 +126,34 @@ p {
   font-family: "Rubik Wet Paint", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+/* List formatting
+ */
+ ul {
+
+ }
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the expanded collapsible-content*/
+.content-expand {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
