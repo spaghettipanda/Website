@@ -7,11 +7,8 @@ html {
 
 body {
     /**/
-    background-color: #ffedd8bd;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f2db;
+    font-family: "Rubik" ,Arial, Helvetica, sans-serif;
 }
 
 /* NAVBAR Styling
@@ -41,10 +38,9 @@ body {
 }
 
 /* Active Formatting */
-.topnav a.active {
+.topnav a:active {
   background-color: Yellow;
   color: Black;
-  font-weight: bold;
 }
 
 /* Active Hover Formatting */
@@ -168,7 +164,8 @@ h1 {
   padding-bottom: 10px;
   padding-left: 20px;
   width: 100%;
-  background-color: #fcf80556;
+  background-color: #000000;
+  color: white;
 }
 
 h2 {
@@ -284,12 +281,10 @@ p {
 
  /* Style the button that is used to open and close the collapsible content */
  .collapsible {
+  padding: 0;
   width: 100%;
-  background-color: #fddbb3bd;
+  background-color: #00000005;
   border-radius: 8px;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
   cursor: pointer;
   border: none;
   text-align: left;
@@ -297,8 +292,8 @@ p {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.collapsible:hover {
-  background-color: #ffcc93bd;
+.active, .collapsible:hover {
+  background-color: #fbff0010;
 }
 
 /* Style the expanded collapsible-content*/
@@ -307,5 +302,5 @@ p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #fddbb3bd;
+  background-color: #fbff000c;
 }

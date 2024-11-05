@@ -37,8 +37,8 @@
 
 <body>
     <!-- Navigation Bar -->
-    <div class="topnav" id="topNavBar">
-        <a class="active" href="#top">Home</a>
+    <nav class="topnav" id="topNavBar">
+        <a href="#top"><i class="bi bi-arrow-up-short"></i></a>
         <a href="#Personal Details">
             Personal Details</a>
         <a href="#About Me">About Me</a>
@@ -55,7 +55,7 @@
         <a href="javascript:void(0);" class="icon" onclick="responsiveNavBar()">
             <i class="bi bi-list"></i>
         </a>
-    </div>
+    </nav>
 
     <!-- Content -->
     <div class="content">
@@ -101,9 +101,19 @@
                             </ul>
                         </div>
                     </li>
-                    <li>Change Deployment</li>
-                    <li>Patching activity</li>
-                    <li>Patching activity</li>
+                    <li>
+                        <button class="collapsible">Change Management</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Change Deployment
+                                    <ul>
+                                        <li>Patching</li>
+                                    </ul>
+                                </li>
+                                <li>Stakeholder Communication</li>
+                            </ul>
+                        </div>
+                    </li>
                     <li>Monitoring and Observation</li>
                     <li>Problem Management</li>
                 </ul>
@@ -275,27 +285,158 @@
                     <ul>
                         <li>
                             <button class="collapsible">Risk, Reliability and Safety Analysis</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>Tools for Quantifying Risk and Uncertainty</li>
+                                    <li>Risk Identification Approaches</li>
+                                    <li>Risk Evaluation Tools</li>
+                                    <li>Risk and Safety Controls</li>
+                                    <li>Standard Reliability Mettrics</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">Open Source Tools and Scripting</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>Shell Programming (Bash)</li>
+                                    <li>The File System</li>
+                                    <li>Pipes (Interprocess Communication)</li>
+                                    <li>Interfaces for Software Integration</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">Software Testing and Quality Assurance</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>Standard Test Processes
+                                        <ul>
+                                            <li>Unit Testing</li>
+                                            <li>Integration Testing</li>
+                                            <li>System Testing</li>
+                                            <li>Performance Testing</li>
+                                            <li>Acceptance Testing</li>
+                                        </ul>
+                                    </li>
+                                    <li>Testing Methods
+                                        <ul>
+                                            <li>Code Inspections</li>
+                                            <li>Equivalence Class Tests</li>
+                                            <li>Path Testing</li>
+                                            <li>Conformance Testing</li>
+                                            <li>Use Case Tests</li>
+                                        </ul>
+                                    </li>
+                                    <li>Verification and Validation of Software
+                                        <ul>
+                                            <li>Inspections</li>
+                                            <li>Test Case Design and Execution</li>
+                                            <li>Test Metrics</li>
+                                        </ul>
+                                    </li>
+                                    <li>Quality Assurance
+                                        <ul>
+                                            <li>ISO 9001 and CMMI standards</li>
+                                            <li>Configuration Management</li>
+                                            <li>Process Modelling</li>
+                                            <li>Usability</li>
+                                            <li>Complexity and Process Metrics</li>
+                                            <li>Process and Risk Management</li>
+                                            <li>Reliability Modelling</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">Cloud Computing</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>Amazon Web Services</li>
+                                    <li>Provisioning of Computing Resources</li>
+                                    <li>Cloud-based Application Design, Development and Management</li>
+                                    <li>Cloud-based Application Security</li>
+                                    <li>AWS APIs</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">The Internet of Things</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>Small Hardware Devices (Arduino, Raspberry Pi)</li>
+                                    <li>Smartphone and Tablet Programming</li>
+                                    <li>UI Design for Small Form-Factor Devices</li>
+                                    <li>Data Persistence</li>
+                                    <li>Messaging and Networking</li>
+                                    <li>Embedded Sensors</li>
+                                    <li>Location-based Services</li>
+                                    <li>Security and Privacy</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">Geographic Information Systems Applications</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>GIS (ArcGIS)</li>
+                                    <li>Spatial Analysis</li>
+                                    <li>Spatial Sampling</li>
+                                    <li>Spatial Statistics</li>
+                                    <li>Interaction Models</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">Agile Web Development</button>
+                            <div class="content-expand">
+                                <ul>
+                                    <li>Agile Methodology</li>
+                                    <li>Client/Server Models</li>
+                                    <li>Server-side Programming</li>
+                                    <li>N-tiered Application Architectures</li>
+                                    <li>Database Access and Abstraction</li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
                             <button class="collapsible">Information Technology Capstone Project</button>
+                            <div class="content-expand">Decarbonising Wastewater Treatment Web Application
+                                <ul>
+                                    <li>Client:
+                                        <ul>
+                                            <li>
+                                                UWA
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Technologies used:
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>Pythton</li>
+                                            <li>MySQL</li>
+                                            <li>Django</li>
+                                            <li>Apache Echart</li>
+                                            <li>AWS</li>
+                                        </ul>
+                                    </li>
+                                    <li>Functionality
+                                        <ul>
+                                            <li>Interactive Visualisation of Sensor Data</li>
+                                            <li>Data Storage and Download</li>
+                                            <li>Cloud/Local Deployment</li>
+                                        </ul>
+                                    </li>
+                                    <li>GitHub Repo: 
+                                        <ul>
+                                            <li><a href="https://github.com/Changhao029/DecarbonisingWastewaterTreatment">https://github.com/Changhao029/DecarbonisingWastewaterTreatment</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -307,33 +448,149 @@
                 <ul>
                     <li>
                         <button class="collapsible">Object-Oriented Software Engineering</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Java Programming</li>
+                                <li>Inheritance</li>
+                                <li>Generics</li>
+                                <li>Interfaces</li>
+                                <li>Abstract Classes</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Relational Database Management Systems</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>SQL (MySQL)</li>
+                                <li>Database Design, Implementation and Use</li>
+                                <li>The Relational Model</li>
+                                <li>API building</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Data Structures and Algorithms</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Java Programming</li>
+                                <li>Generic Structures/Abstract Data Types</li>
+                                <li>Specification of commonly used Abstract Data Types</li>
+                                <li>Implementation of commonly used Abstract Data Types</li>
+                                <li>Time-and-Space performance of commonly used Abstract Data Types</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Systems Programming</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>C Programming</li>
+                                <li>Process Execution</li>
+                                <li>Input and Output</li>
+                                <li>Memory Management</li>
+                                <li>File Systems</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Discrete Structures</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Set Theory and Logic</li>
+                                <li>Formal Proof Methodologies</li>
+                                <li>Automata Theory</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Computer Networks</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Wired and Wireless Computter Networks</li>
+                                <li>Security and Privacy Factors</li>
+                                <li>Physical Operation of Networks</li>
+                                <li>Data Encoding, Error Detection and Recovery</li>
+                                <li>TCP/IP Protocol Stack</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Cybersecurity</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Cybersecurity Domains</li>
+                                <li>CIA Triad</li>
+                                <li>Defense Against CyberAttacks</li>
+                                <li>Ciphers</li>
+                                <li>Social Engineering</li>
+                                <li>Hashing</li>
+                                <li>Cracking</li>
+                                <li>Malware</li>
+                                <li>Network Attacks</li>
+                                <li>Web-based Attacks</li>
+                                <li>SQL Injection</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Graphics & Animation</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>OpenGL API Programming</li>
+                                <li>Homogeneous Coordinate Systtem for Affine Transformations</li>
+                                <li>Lighting and Shading Models</li>
+                                <li>GLSL Programmable Shaders</li>
+                                <li>Three-Dimensional Animation</li>
+                                <li>Articulated Body Modelling</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Algorithms, Agents and Artificial Intelligence</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Java Programming</li>
+                                <li>Sorting Algorithms</li>
+                                <li>Graph Algorithms</li>
+                                <li>Dynamic Programming</li>
+                                <li>String Algorithms</li>
+                                <li>Greedy Algorithms</li>
+                                <li>NP vs P</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <button class="collapsible">Professional Computing (Capstone Project)</button>
+                        <div class="content-expand">Mobile Health Application for Hospitals and Patientts
+                            <ul>
+                                <li>Client:
+                                    <ul>
+                                        <li>
+                                            Sir Charles Gairdner Hostpial - Department of Respiratory Medicine
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Technologies used:
+                                    <ul>
+                                        <li>Flutter</li>
+                                        <li>Firebase (NoSQL)</li>
+                                        <li>Firestore</li>
+                                        <li>HTML</li>
+                                        <li>PHP</li>
+                                    </ul>
+                                </li>
+                                <li>Functionality: 
+                                    <ul>
+                                        <li>Storage and upload of treatment information, patient/provider data, anonymized analytic data</li>
+                                        <li>Recording of symptoms and disease progression</li>
+                                        <li>Viewing/deletion of patient data/records from web interface</li>
+                                        <li>Auditing and review - summary mechanisms</li>
+                                        <li>User access control – logins/accounts</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
                 </p>
