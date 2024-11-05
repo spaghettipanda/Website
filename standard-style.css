@@ -7,6 +7,11 @@ html {
 
 body {
     /**/
+    background-color: #ffedd8bd;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* NAVBAR Styling
@@ -17,11 +22,6 @@ body {
   top: 0;
   overflow: hidden;
   background-color: Black;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Navbar Link Formatting */
@@ -71,6 +71,22 @@ body {
   }
 }
 
+@media screen and (min-width: 550px) and (max-width: 1050px) {
+  .language {
+    float:left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1051px){
+  .language {
+    float:left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 33%;
+  }
+}
+
 /* Responsive Class*/
 @media screen and (max-width: 1050px) {
   .topnav.responsive {
@@ -88,24 +104,96 @@ body {
   }
 }
 
+/* Progress Bar */
+.progress {
+  background: rgba(0, 0, 0, 0.144);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 20px;
+}
+
+.progress-70 {
+  animation: load_70 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #000000;
+  height: 20px;
+  width: 0;
+}
+
+.progress-80 {
+  animation: load_80 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #000000;
+  height: 20px;
+  width: 0;
+}
+
+.progress-full {
+  animation: load_full 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #000000;
+  height: 20px;
+  width: 0;
+}
+
+@keyframes load_70 {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+
+@keyframes load_80 {
+  0% { width: 0; }
+  100% { width: 80%; }
+}
+
+@keyframes load_full {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
 /* CONTENT STYLING
     Styling content on the page
     */
 h1 {
-  font-family: "Rubik Wet Paint", system-ui;
-  margin-left: 20px;
+  font-family: "Lato", system-ui;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  width: 100%;
+  background-color: #fcf80556;
 }
 
 h2 {
   font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  
 }
 
 h3 {
   font-family: "Rubik", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
 }
 
 p {
   font-family: "Itim", serif;
+}
+
+.details{
+  padding: 20px;
 }
 
 /* Font Flags */
@@ -122,10 +210,64 @@ p {
   font-style: normal;
 }
 
-.rubik-wet-paint-regular {
-  font-family: "Rubik Wet Paint", system-ui;
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 /* List formatting
@@ -133,20 +275,30 @@ p {
  ul {
 
  }
+ 
+ /* Button Styling */
+ button {
+  
+  
+ }
 
  /* Style the button that is used to open and close the collapsible content */
  .collapsible {
-  cursor: pointer;
   width: 100%;
+  background-color: #fddbb3bd;
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
+.collapsible:hover {
+  background-color: #ffcc93bd;
 }
 
 /* Style the expanded collapsible-content*/
@@ -155,5 +307,5 @@ p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #fddbb3bd;
 }
