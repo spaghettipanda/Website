@@ -23,10 +23,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Importing "Itim", Rubik Wet Paint, and Rubik Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <!-- Importing "Noto Serif", Rubik Wet Paint, and Rubik Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
 
     <!-- CSS Style Sheet (if -->
     <link rel="stylesheet" href="standard-style.css" />
@@ -75,14 +74,20 @@
         <div id="About Me">
             <h1>About Me</h1>
             <div class="details">
-                <p>I am Will I Am</p>
+                <p>Driven by a passion for optimising operations and delivering innovative solutions.
+                    <br><br>
+                    With a strong foundation in technology and a keen understanding of mining processes, I pride myself on being resourceful and adaptable, always looking for creative solutions to complex challenges.<br>
+                    Whether troubleshooting technical issues, streamlining workflows, or monitoring the performance of critical applications and systems, I bring a proactive and detail-oriented approach to every task.
+                    <br><br>
+                    Motivated by continuous improvement, I am always eager to learn and expand my expertise.<br>
+                    I thrive in collaborative environments and enjoy working with cross-functional teams to solve complex challenges, share knowledge, and implement solutions that drive operational efficiency and innovation.</p>
             </div>
         </div>
 
         <div id="Experience">
             <h1>Experience</h1>
             <div class="details">
-                <h2>Production Applications Systems</h2>
+                <h2>Production Applications Systems [Respond TROC 24x7]</h2>
                 <h3>BHP</h3>
                 <h4>02/2024 to Current</h4>
                 <h5>Responsibilities</h5>
@@ -114,7 +119,17 @@
                             </ul>
                         </div>
                     </li>
-                    <li>Monitoring and Observation</li>
+                    <li>
+                        <button class="collapsible">Monitoring and Observation</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>TROC HMI</li>
+                                <li>Splunk</li>
+                                <li>PI Vision</li>
+                                <li>Application Logs</li>
+                            </ul>
+                        </div>
+                    </li>
                     <li>Problem Management</li>
                 </ul>
 
@@ -145,10 +160,74 @@
                             </ul>
                         </div>
                     </li>
-                    <li>Labs</li>
-                    <li>MES</li>
-                    <li>Rail</li>
-                    <li>Delay Accounting System (DAS)</li>
+                    <li>
+                        <button class="collapsible">Lab Applications</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>CCLAS 
+                                    <ul>
+                                        <li>Laboratory Information Management System (LIMS)</li>
+                                    </ul>
+                                </li>
+                                <li>SampleManager</li>
+                                <li>PrepMaster</li>
+                                <li>X-Ray Fluorescence (XRF)</li>
+                                <li>Thermogravimetric Analyzer (TGA)</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapsible">Manufacturing Execution System (MES)</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Materials Tracker (MT)
+                                    <ul>
+                                        <li>Materials Tracker Mines (MTM)</li>
+                                        <li>Materials Tracker Port (MTP)</li>
+                                    </ul>
+                                </li>
+
+                                <li>AVEVA Production Management
+                                    <ul>
+                                        <li>Production Accounting/Delay Accounting(DAS)</li>
+                                        <li>PI Hisorian (OSI PI)</li>
+                                        <li>SCADA</li>
+                                        <li>PI Vision</li>
+                                    </ul>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapsible">Rail Applications</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Rail Historian (RH)
+                                    <ul>
+                                        <li>Rake Management</li>
+                                        <li>Database Corrections (Consist)</li>
+                                    </ul>
+                                </li>
+
+                                <li>Rail Status Board (RSB)</li>
+                                <li>TrainGraph+ (Rail Scheduling Tool)</li>
+                                <li>Rail Validation Console</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="collapsible">Integratiton</button>
+                        <div class="content-expand">
+                            <ul>
+                                <li>Mulesoft</li>
+                                <li>StreamSets</li>
+                                <li>Solace</li>
+                                <li>GoAnyWhere (ManagedFileTransfer)</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
 
                 <br>
@@ -599,9 +678,13 @@
         <div id="Accomplishments">
             <h1>Accomplishments</h1>
             <div class="details">
-                <h2></h2>
-                <h3></h3>
-                <p></p>
+                <h2>WAIO Rail Data Automation Script</h2>
+                <h4><a href="https://bos-brightspot.bhp.com/#/preview/26492">Bright Spot 26492</a></h3>
+                <p> Developed a Python script to automate the extraction and processing of the correction data, with additional automation of exporting of data into an email template to be sent out to the relevant stakeholders and teams. 
+                    <br>
+                    Packaged into a small executable file, the script which would utilise the pre-existing resources on the user's system to perform all the required actions to process and clean the tables of irrelevant data.
+                    <br><br>
+                    Value: Reduce time spent on manual repetitive data extraction by approximately 5-10 hours a week</p>
             </div>
         </div>
         <div id="Certifications">

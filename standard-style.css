@@ -56,7 +56,8 @@ body {
 }
 
 /* Navbar media queries */
-/* Hide all buttons except Home when width < 1050px */
+/* When screen is less than 1050px */
+/* Hide all buttons except Home */
 @media screen and (max-width: 1050px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -65,26 +66,6 @@ body {
     float: right;
     display: block;
   }
-}
-
-@media screen and (min-width: 550px) and (max-width: 1050px) {
-  .language {
-    float:left;
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1051px){
-  .language {
-    float:left;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 33%;
-  }
-}
-
-/* Responsive Class*/
-@media screen and (max-width: 1050px) {
   .topnav.responsive {
     position: sticky;
   }
@@ -97,6 +78,16 @@ body {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+/* When screen width is greater than 1051px */
+@media screen and (min-width: 1051px){
+  .language {
+    float:left;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 33%;
   }
 }
 
@@ -169,24 +160,24 @@ h1 {
 }
 
 h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Noto Serif", serif;
   font-size: 20px;
   
 }
 
 h3 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Noto Serif", serif;
   font-style: italic;
   font-size: 15px;
 }
 
 h4 {
-  font-family: "Rubik", sans-serif;
-  font-size: 10px;
+  font-family: "Noto Serif", serif;
+  font-size: 12px;
 }
 
 p {
-  font-family: "Itim", serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .details{
@@ -194,10 +185,13 @@ p {
 }
 
 /* Font Flags */
-.itim-regular {
-  font-family: "Itim", serif;
-  font-weight: 400;
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .rubik {
