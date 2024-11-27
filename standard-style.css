@@ -7,7 +7,7 @@ html {
 
 body {
     /**/
-    background-color: #f5f2db;
+    background: linear-gradient(20deg,  #fff6f6 0%,  #fff8ed 51%,  #f5f2db 85%);
     font-family: "Rubik" ,Arial, Helvetica, sans-serif;
 }
 
@@ -45,7 +45,7 @@ body {
 
 /* Active Hover Formatting */
 .topnav a.active:hover {
-  background-color: #ffe600;
+  background-color: #ffbb00;
   color: Black;
   font-weight: bold;
 }
@@ -53,6 +53,24 @@ body {
 /* Hide icon when not necessary */
 .topnav .nav_icon {
   display: none;
+}
+
+/* 
+  Progress Container
+*/
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+}
+
+/* 
+  Progress Bar
+*/
+.progress-bar {
+  height: 3px;
+  background: #ffde25dc;
+  width: 0%;
 }
 
 /* Navbar media queries */
@@ -269,7 +287,6 @@ p {
  
  /* Button Styling */
  button {
-  
   
  }
 
