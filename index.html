@@ -34,7 +34,7 @@
     <style></style>
 </head>
 
-<body>
+<body onload="collapsible()">
     <!-- Navigation Bar -->
     <nav class="topnav" id="topNavBar">
         <a href="#top"><i class="bi bi-arrow-up-short"></i></a>
@@ -917,44 +917,58 @@
         }
 
         /* Collapsible (Slide Down) */
-        var coll=document.getElementsByClassName("collapsible");
-        var i;
+        function collapsible() {
+            var coll=document.getElementsByClassName("collapsible");
+            var i;
 
-        for (i=0;i<coll.length;i=i+1) {
-            coll[i].addEventListener(
-                "mouseover",function () {
-                this.classList.toggle("active");
-                var content=this.nextElementSibling;
-                if (content.style.maxHeight) {
-                    content.style.maxHeight=null;
-                }
-                else {
-                    content.style.maxHeight=content.scrollHeight+"px";
-                }
-            }
-            );
-        }
-
-        for (i=0;i<coll.length;i=i+1) {
-            coll[i].addEventListener(
-                "click",function () {
-                    if(this.classList.contains(clicked)){
-                        this.classList.replace("clicked","active");
+            /* On Click */
+            for (i=0;i<coll.length;i=i+1) {
+                coll[i].addEventListener(
+                    "click",function () {
+                        this.classList.toggle("click");
                         var content=this.nextElementSibling;
-                        if (content.style.maxHeight) {
-                            content.style.maxHeight=null;
-                        }
-                        else {
+                        if(this.classList.contains('click')){
                             content.style.maxHeight=content.scrollHeight+"px";
                         }
-                    }
-                    else{
-                        if(this.classList.contains(active)){
-                            this.classList.replace("active","clicked");
+                        else {
+                            content.style.maxHeight=null;
                         }
                     }
-                }
-            );
+                );
+            }
+
+            /* On Mouse Hover */
+            for (i=0;i<coll.length;i=i+1) {
+                coll[i].addEventListener(
+                    "mouseover",function () {
+                        if(!this.classList.contains('click')){
+                            var content=this.nextElementSibling;
+                            if (content.style.maxHeight) {
+                                content.style.maxHeight=null;
+                            }
+                            else {
+                                content.style.maxHeight=content.scrollHeight+"px";
+                            }
+                        }                    
+                    }
+                );
+            }
+
+            for (i=0;i<coll.length;i=i+1) {
+                coll[i].addEventListener(
+                    "mouseout",function () {
+                        if(!this.classList.contains('click')){ 
+                            var content=this.nextElementSibling;
+                            if (content.style.maxHeight) {
+                                content.style.maxHeight=null;
+                            }
+                            else {
+                                content.style.maxHeight=content.scrollHeight+"px";
+                            }
+                        }
+                    }
+                );
+            }
         }
     </script>
 </body>
